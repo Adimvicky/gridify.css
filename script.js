@@ -15,7 +15,7 @@ xhr.addEventListener('click', function(){
    XHR.onreadystatechange = function(){
        if(XHR.readyState == 4 && XHR.status == 200){
           let data = JSON.parse(XHR.responseText);
-          console.log(XHR.readyState, XHR.status)
+          console.log(typeof XHR.readyState,typeof XHR.status)
           quote.textContent = data[0];
        } else {
            throw Error("Something went wrong with the XHR..");
