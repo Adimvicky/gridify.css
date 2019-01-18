@@ -1,7 +1,15 @@
 body {
     font-family: 'Lato','sans-serif','segoe ui';
     color: #777;
+    padding : 0;
+    
 }
+
+.container {
+    margin : 2rem;
+}
+
+
 
 .row {   
     background-color: #cecece;
@@ -10,6 +18,82 @@ body {
     font-size: 1.2rem;
 }
 
-[class^="col-"] {
+[class^="col-"]{
     background-color: rgba(240, 29, 127, 0.815);
 }
+
+.header {
+    font-family: 'Lato','segoe ui';
+    font-size: 3rem;
+    text-align : center;
+    color : rgba(240, 29, 127, 0.815); 
+    width : 30%;
+    margin : 0 auto;
+    margin-bottom : 2rem;
+    padding : 0.3rem;
+}
+
+.header__download {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color : #777;
+}
+
+.header__download a {
+    text-decoration: none;
+}
+.header__download a:hover,
+.header__download a:active {
+    border-bottom: 1px solid rgba(240, 29, 127, 0.815);
+}
+
+a.fork img {
+    position: absolute;
+    top : 0;
+    left : 90%;
+    animation: slideInUp ease-in .7s;
+}
+@media only screen and (max-width :1150px){
+    a.fork img {
+        left : 87%;
+    }
+}
+
+@media only screen and (max-width :920px){
+    a.fork img {
+        left : 85%;
+    }
+}
+@media only screen and (max-width : 768px ){
+    a.fork img {
+        left : 80%;
+    }
+}
+@media only screen and (max-width : 650px ){
+    a.fork img {
+        left : 76%;
+    }
+}
+@media only screen and (max-width : 500px ){
+    a.fork img {
+        left : 70%;
+    }
+}
+
+
+@keyframes slideInUp {
+    0% {
+        opacity : 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity : .5;
+        transform: translateY(-50%);
+    }
+    100% {
+        opacity : 1;
+        transform: translateY(0);
+    }
+}
+
+
