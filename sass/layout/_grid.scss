@@ -1,11 +1,6 @@
 .row {
-    max-width : 114rem;
-    background-color: #cecece;
+    max-width : $grid-max-width;
     margin : 0 auto;
-
-    color : #fff;
-    text-align: center;
-    font-size: 1.2rem;
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
@@ -13,7 +8,6 @@
     @include clearfix;
 
     [class^="col-"] {
-        background-color: orangered;
         float : left;
         &:not(:last-child){
             margin-right: $gutter-horizontal;
@@ -22,7 +16,6 @@
             }
         }
     }
-
     .col-1-of-2 {
         width : calc((100% - #{$gutter-horizontal}) / 2);
         @include tablet {

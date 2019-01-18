@@ -6,15 +6,13 @@ $color-black : #000;
 
 // GRID
 
-$grid-width : 114rem;
-$gutter-vertical : 8rem;
+$grid-max-width : 114rem;
+$gutter-vertical : 4rem;
 
-
-$gutter-horizontal : 6rem;
+$gutter-horizontal : 5rem;
 $gutter-horizontal-tablet : 2rem;
 
-
-// SCREEN WIDTHS FOR MEDIA QUERIES 
+// SCREEN WIDTHS FOR MEDIA QUERIES
 
 $small-phone : 480px;
 $landscape-phone : 576px;
