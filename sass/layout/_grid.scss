@@ -1,0 +1,181 @@
+.row {
+    max-width : 114rem;
+    background-color: #cecece;
+    margin : 0 auto;
+
+    color : #fff;
+    text-align: center;
+    font-size: 1.2rem;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+    @include clearfix;
+
+    [class^="col-"] {
+        background-color: orangered;
+        float : left;
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+            @include tablet {
+                margin-right: $gutter-horizontal-tablet
+            }
+        }
+    }
+
+    .col-1-of-2 {
+        width : calc((100% - #{$gutter-horizontal}) / 2);
+        @include tablet {
+            width : calc((100% - #{$gutter-horizontal-tablet}) / 2);
+        }
+    }
+
+    .col-1-of-3 {
+        width : calc((100% - (2 * #{$gutter-horizontal})) / 3);
+    }
+    .col-1-of-4 {
+        width : calc((100% - (3 * #{$gutter-horizontal})) / 4);
+    }
+
+
+    .col-2-of-3 {
+        width : calc(2 * ((100% - (2 * #{$gutter-horizontal})) / 3) + #{$gutter-horizontal});
+    }
+    .col-2-of-4 {
+        width : calc(2 * ((100% - (3 * #{$gutter-horizontal})) / 4) + #{$gutter-horizontal});
+    }
+    .col-3-of-4 {
+        width : calc(3 * ((100% - (3 * #{$gutter-horizontal})) / 4) + (2 * #{$gutter-horizontal}));
+    }
+
+
+
+    .col-1-of-5 {
+        width : calc((100% - (4 * #{$gutter-horizontal})) / 5);
+    }
+    .col-2-of-5 {
+        width : calc(2 * ((100% - (4 * #{$gutter-horizontal})) / 5) + #{$gutter-horizontal});
+    }
+    .col-3-of-5 {
+        width : calc( 3 * (100% - (4 * #{$gutter-horizontal})) / 5 + (2 * #{$gutter-horizontal}));
+    } 
+    .col-4-of-5 {
+        width : calc(4 * (100% - (4 * #{$gutter-horizontal})) / 5 + (3 * #{$gutter-horizontal}));
+    }
+
+
+    .col-1-of-6 {
+        width : calc((100% - (5 * #{$gutter-horizontal})) / 6);
+    }
+    .col-2-of-6 {
+        width : calc(2 * (100% - (5 * #{$gutter-horizontal})) / 6 + #{$gutter-horizontal});
+    }
+    .col-3-of-6 {
+        width : calc(3 * (100% - (5 * #{$gutter-horizontal})) / 6 + (2 * #{$gutter-horizontal}));
+    }
+    .col-4-of-6 {
+        width : calc(4 * (100% - (5 * #{$gutter-horizontal})) / 6 + (3 * #{$gutter-horizontal}));
+    }
+    .col-5-of-6 {
+        width : calc(5 * (100% - (5 * #{$gutter-horizontal})) / 6 + (4 * #{$gutter-horizontal}));
+    }
+
+    .col-1-of-7 {
+        width : calc((100% - (6 * #{$gutter-horizontal})) / 7);
+    }
+
+    .col-2-of-7 {
+        width : calc(2 * (100% - (6 * #{$gutter-horizontal})) / 7 + #{$gutter-horizontal});
+    }
+    .col-3-of-7 {
+        width : calc(3 * (100% - (6 * #{$gutter-horizontal})) / 7 + (2 * #{$gutter-horizontal}));
+    }
+    .col-4-of-7 {
+        width : calc(4 * (100% - (6 * #{$gutter-horizontal})) / 7 + (3 *#{$gutter-horizontal}));
+    }
+    .col-5-of-7 {
+        width : calc(5 * (100% - (6 * #{$gutter-horizontal})) / 7 + (4 *#{$gutter-horizontal}));
+    }
+    .col-6-of-7 {
+        width : calc(6 * (100% - (6 * #{$gutter-horizontal})) / 7 + (5 *#{$gutter-horizontal}));
+    }
+
+    .col-1-of-8 {
+        width : calc((100% - (7 * #{$gutter-horizontal})) / 8);
+    }
+    .col-2-of-8 {
+        width :  calc(2 * (100% - (7 * #{$gutter-horizontal})) / 8 + #{$gutter-horizontal});
+    }
+    .col-3-of-8 {
+        width :  calc(3 * (100% - (7 * #{$gutter-horizontal})) / 8 + (2 * #{$gutter-horizontal}));
+    }
+    .col-4-of-8 {
+        width :  calc(4 * (100% - (7 * #{$gutter-horizontal})) / 8 + (3 * #{$gutter-horizontal}));
+    }
+    .col-5-of-8 {
+        width :  calc(5 * (100% - (7 * #{$gutter-horizontal})) / 8 + (4 * #{$gutter-horizontal}));
+    }
+    .col-6-of-8 {
+        width :  calc(6 * (100% - (7 * #{$gutter-horizontal})) / 8 + (5 * #{$gutter-horizontal}));
+    }
+    .col-7-of-8 {
+        width :  calc(7 * (100% - (7 * #{$gutter-horizontal})) / 8 + (6 * #{$gutter-horizontal}));
+    }
+
+
+    .col-1-of-9 {
+        width : calc((100% - (8 * #{$gutter-horizontal})) / 9);
+    }
+    .col-2-of-9 {
+        width : calc(2 * (100% - (8 * #{$gutter-horizontal})) / 9 + #{$gutter-horizontal});
+    }
+    .col-3-of-9 {
+        width : calc(3 * (100% - (8 * #{$gutter-horizontal})) / 9 + (2 * #{$gutter-horizontal}));
+    }
+    .col-4-of-9 {
+        width : calc(4 * (100% - (8 * #{$gutter-horizontal})) / 9 + (3 * #{$gutter-horizontal}));
+    }
+    .col-5-of-9 {
+        width : calc(5 * (100% - (8 * #{$gutter-horizontal})) / 9 + (4 * #{$gutter-horizontal}));
+    }
+    .col-6-of-9 {
+        width : calc(6 * (100% - (8 * #{$gutter-horizontal})) / 9 + (5 * #{$gutter-horizontal}));
+    }
+    .col-7-of-9 {
+        width : calc(7 * (100% - (8 * #{$gutter-horizontal})) / 9 + (6 * #{$gutter-horizontal}));
+    }
+    .col-8-of-9 {
+        width : calc(8 * (100% - (8 * #{$gutter-horizontal})) / 9 + (7 * #{$gutter-horizontal}));
+    }
+   
+
+
+
+    .col-1-of-10 {
+        width : calc((100% - (9 * #{$gutter-horizontal})) / 10);
+    }
+    .col-2-of-10 {
+        width : calc(2 * (100% - (9 * #{$gutter-horizontal})) / 10 + #{$gutter-horizontal});
+    }
+    .col-3-of-10 {
+        width : calc(3 * (100% - (9 * #{$gutter-horizontal})) / 10 + ( 2 * #{$gutter-horizontal}));
+    }
+    .col-4-of-10 {
+        width : calc(4 * (100% - (9 * #{$gutter-horizontal})) / 10 + ( 3 * #{$gutter-horizontal}));
+    }
+    .col-5-of-10 {
+        width : calc(5 * (100% - (9 * #{$gutter-horizontal})) / 10 + ( 4 * #{$gutter-horizontal}));
+    }
+    .col-6-of-10 {
+        width : calc(6 * (100% - (9 * #{$gutter-horizontal})) / 10 + ( 5 * #{$gutter-horizontal}));
+    }
+    .col-7-of-10 {
+        width : calc(7 * (100% - (9 * #{$gutter-horizontal})) / 10 + ( 6 * #{$gutter-horizontal}));
+    }
+    .col-8-of-10 {
+        width : calc(8 * ((100% - (9 * #{$gutter-horizontal})) / 10) + (7 * #{$gutter-horizontal}));        
+    }
+    .col-9-of-10 {
+        width : calc(9 * (100% - (9 * #{$gutter-horizontal})) / 10 + ( 8 * #{$gutter-horizontal}));
+    }
+}

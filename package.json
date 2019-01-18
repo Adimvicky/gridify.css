@@ -1,0 +1,33 @@
+{
+  "name": "gridify.css",
+  "version": "1.0.0",
+  "description": "A css library for creating fluid grids using the good old float ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "scss",
+    "float",
+    "css",
+    "library",
+    "float",
+    "layout",
+    "grid",
+    "layout",
+    "css",
+    "layout",
+    "floats",
+    "flex",
+    "support",
+    "older",
+    "browsers"
+  ],
+  "author": "Adim",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
