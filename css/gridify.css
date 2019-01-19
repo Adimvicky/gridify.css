@@ -17,6 +17,7 @@ body {
 
 .row {
   max-width: 114rem;
+  width: 100%;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 4rem; }

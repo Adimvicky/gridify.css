@@ -20,6 +20,7 @@ body {
     color : #fff;
     text-align: center;
     font-size: 1.2rem;
+    width : 100%;
 }
 
 [class^="col-"]{
@@ -53,11 +54,11 @@ body {
     color: rgba(240, 29, 127, 0.65)
 }
 .header__text-main {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 .header__text-sub {
 
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .header__download-btn {
@@ -88,6 +89,17 @@ body {
     transform: translateY(2px);
 }
 
+img.carbon {
+    width: 60%;
+    margin: 3rem auto;
+    margin-top: 0;
+    display: block;
+}
+p.usage {
+    font-size: 2rem;
+    margin: 3rem 0 1rem 0;
+}
+
 
 a.fork img {
     position: absolute;
@@ -112,6 +124,9 @@ a.fork img:active {
     a.fork img {
         left : 85%;
     }
+    img.carbon {
+        width : 70%;
+    }
 }
 @media only screen and (max-width : 768px ){
     a.fork img {
@@ -120,10 +135,16 @@ a.fork img:active {
     .header__download-btn {
         width : 40%;
     }
+    img.carbon {
+        width : 85%;
+    }
 }
 @media only screen and (max-width : 650px ){
     a.fork img {
         left : 76%;
+    }
+    img.carbon {
+        width : 100%;
     }
     
 }
@@ -131,6 +152,7 @@ a.fork img:active {
     a.fork img {
         left : 70%;
     }
+    
 }
 @media only screen and (max-width : 480px ){
     a.fork img {
