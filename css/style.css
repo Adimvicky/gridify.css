@@ -1,3 +1,7 @@
+html {
+    font-size : 62.5%;
+}
+
 body {
     font-family: 'Lato','sans-serif','segoe ui';
     color: #777;
@@ -12,7 +16,7 @@ body {
 
 
 .row {   
-    background-color: #cecece;
+    background-color: #fff;
     color : #fff;
     text-align: center;
     font-size: 1.2rem;
@@ -20,38 +24,83 @@ body {
 
 [class^="col-"]{
     background-color: rgba(240, 29, 127, 0.815);
+    height: 3rem;
+    border-radius: 2px;
+    padding-top: .5rem;
 }
 
 .header {
     font-family: 'Lato','segoe ui';
     font-size: 3rem;
     text-align : center;
-    color : rgba(240, 29, 127, 0.815); 
+    color : rgba(240, 29, 127, 0.99); 
     width : 30%;
     margin : 0 auto;
-    margin-bottom : 2rem;
-    padding : 0.3rem;
+    margin-bottom : 5rem;
+    padding : 0.3rem; 
+    cursor: pointer;  
+    transition: all .1s;
 }
 
-.header__download {
-    text-decoration: none;
-    font-size: 1.3rem;
-    color : #777;
+.header:hover {
+    transform: skewY(5deg) skewX(10deg) scale(1.1);
 }
 
-.header__download a {
+
+
+.header__text {
+    text-align: center;
+    color: rgba(240, 29, 127, 0.65)
+}
+.header__text-main {
+    font-size: 1.7rem;
+}
+.header__text-sub {
+
+    font-size: 1.5rem;
+}
+
+.header__download-btn {
+    display: block;
+    text-align: center;
+    border : 1px solid rgb(190, 28, 90);
+    border-radius: 25px;
+    width : 20%;
+    margin : 4rem auto;
+    padding : 1rem;
+    background-color: linear-gradient(#f4f4,#000);
+    cursor: pointer;
+    transition: all .2s;
+    
+}
+.header__download-btn  {
     text-decoration: none;
+    color : rgba(240, 29, 127, 0.815);
+    font-size: 1.5rem;
 }
-.header__download a:hover,
-.header__download a:active {
-    border-bottom: 1px solid rgba(240, 29, 127, 0.815);
+
+.header__download-btn:hover,
+.header__download-btn:active {
+    background-color: rgba(240, 29, 127, 0.99);
+    color: #fff;
 }
+.header__download-btn:active {
+    transform: translateY(2px);
+}
+
 
 a.fork img {
     position: absolute;
     top : 0;
     left : 90%;
     animation: slideInUp ease-in .7s;
+    transition: all .1s;
+}
+a.fork img:hover {
+    transform: scale(1.1);
+}
+a.fork img:active {
+    transform: translateY(2px);
 }
 @media only screen and (max-width :1150px){
     a.fork img {
@@ -68,18 +117,29 @@ a.fork img {
     a.fork img {
         left : 80%;
     }
+    .header__download-btn {
+        width : 40%;
+    }
 }
 @media only screen and (max-width : 650px ){
     a.fork img {
         left : 76%;
     }
+    
 }
 @media only screen and (max-width : 500px ){
     a.fork img {
         left : 70%;
     }
 }
-
+@media only screen and (max-width : 480px ){
+    a.fork img {
+        left : 66%;
+    }
+    .header__download-btn {
+        width : 60%;
+    }
+}
 
 @keyframes slideInUp {
     0% {
