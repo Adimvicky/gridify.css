@@ -4,18 +4,36 @@
         display: table;
         clear : both;
     } 
-}
+};
+
+@mixin small-phone {
+    @media only screen and (max-width : #{$small-phone}){
+        @content
+    }
+};
 
 @mixin tablet {
     @media only screen and (max-width : #{$tablet}){
       @content
     }
+};
+
+@mixin landscape-phone {
+    @media only screen and (max-width : #{$landscape-phone}){
+        @content
+    }
+};
+
+@mixin desktop {
+    @media only screen and (max-width : #{$desktop}){
+        @content
+    }
 }
 
-//  Small devices (landscape-phones, 576px and down)
-// @media (max-width: 576px) { 
-//     $gutter-horizontal : 2rem;
-//  }
+
+
+
+
 
 // Medium devices (tablets, 768px and down)
 @media (max-width: 768px) {}

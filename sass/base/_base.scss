@@ -10,11 +10,8 @@
 
 body {
     box-sizing: border-box;
-    font-weight: 400;
-    line-height: 1.7;
     padding : 1.5rem;
-    text-rendering: optimizeLegibility;
-
+    
     @include tablet {
         padding : 1rem;
     }
