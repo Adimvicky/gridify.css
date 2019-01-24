@@ -4,7 +4,7 @@
   "description": "A lightweight css library for creating responsive grid based layouts - aimed at bringing the goodness of flexbox and the likes to older browsers",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass sass/main.scss css/gridify.css -w"
+    "compile:sass": "node-sass sass/main.scss css/gridify.css -w"
   },
   "keywords": [
     "css",
