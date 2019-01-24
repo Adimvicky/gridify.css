@@ -1,7 +1,9 @@
+// styling for all .row
 .row {
     max-width : $row-max-width;
     margin : 0 auto;
 
+    // Styling for all .row except the last on the page
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
         @include large-desktop {
@@ -22,10 +24,13 @@
         
     }
 
+    // Clearfix
     @include clearfix;
 
     
 
+
+    // Styling for all .col-{number}-of-{number} in a row
     [class^="col-"] {
         float : left;
         margin-bottom: 1rem;
@@ -33,6 +38,8 @@
         @include small-phone {
             margin-bottom: $gutter-vertical-landscape-phone;
         }
+
+        // Styling for all .col-{number}-of-{number} in a row except the last in the row
         &:not(:last-child){
             margin-right: $gutter-horizontal;
             @include tablet {
@@ -51,16 +58,17 @@
         }
     }
 
-  // All columns in 7 and 6-column grids take 100% width at screens with width <= 992px
+  // All columns in 7,6 and 5-column grids take 100% width at screens with width <= 992px
     [class$="-of-7"],
-    [class$="-of-6"] {
+    [class$="-of-6"],
+    [class$="-of-5"], {
        @include tablet {
            width : 100% !important;
         }
     }
 
-  // All columns in 5,4 and 3-column grids take 100% width at screens with width <= 576px
-    [class$="-of-5"],
+  // All columns in 4 and 3-column grids take 100% width at screens with width <= 576px
+    
     [class$="-of-4"],
     [class$="-of-3"] {
        @include landscape-phone {
@@ -120,9 +128,6 @@
 
     .col-1-of-5 {
         width : calc((100% - (4 * #{$gutter-horizontal})) / 5);
-        // @include desktop {
-        //     width : 100%;
-        // }
         @include tablet {
             width : calc((100% - (4 * #{$gutter-horizontal-tablet})) / 5);
         }
@@ -309,9 +314,6 @@
         }
     }
    
-
-
-
     .col-1-of-10 {
         width : calc((100% - (9 * #{$gutter-horizontal})) / 10);
         @include tablet {
