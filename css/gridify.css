@@ -11,34 +11,62 @@ body {
   @media only screen and (max-width: 768px) {
     body {
       padding: 1rem; } }
+  @media only screen and (max-width: 480px) {
+    body {
+      padding: 0; } }
 
 .row {
   max-width: 114rem;
-  width: 100%;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 3rem; }
+    margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 1200px) {
+      .row:not(:last-child) {
+        margin-bottom: 3.2rem; } }
+    @media only screen and (max-width: 992px) {
+      .row:not(:last-child) {
+        margin-bottom: 2.2rem; } }
     @media only screen and (max-width: 768px) {
       .row:not(:last-child) {
-        margin-right: 2rem; } }
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 576px) {
+      .row:not(:last-child) {
+        margin-bottom: 1rem; } }
+    @media only screen and (max-width: 480px) {
+      .row:not(:last-child) {
+        margin: 1.5rem; } }
   .row::after {
     content: '';
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    float: left; }
-    @media only screen and (max-width: 992px) {
+    float: left;
+    margin-bottom: 1rem; }
+    @media only screen and (max-width: 480px) {
       .row [class^="col-"] {
-        margin-bottom: 2.5rem; } }
-    @media only screen and (max-width: 576px) {
-      .row [class^="col-"] {
-        width: 100% !important;
-        margin-bottom: 0.5rem; } }
+        margin-bottom: 1rem; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 3rem; }
       @media only screen and (max-width: 768px) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 2rem; } }
+  @media only screen and (max-width: 992px) {
+    .row [class$="-of-10"],
+    .row [class$="-of-9"],
+    .row [class$="-of-8"] {
+      width: 100% !important; } }
+  @media only screen and (max-width: 768px) {
+    .row [class$="-of-7"],
+    .row [class$="-of-6"] {
+      width: 100% !important; } }
+  @media only screen and (max-width: 576px) {
+    .row [class$="-of-5"],
+    .row [class$="-of-4"],
+    .row [class$="-of-3"] {
+      width: 100% !important; } }
+  @media only screen and (max-width: 480px) {
+    .row [class$="-of-2"] {
+      width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 3rem) / 2); }
     @media only screen and (max-width: 768px) {

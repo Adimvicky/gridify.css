@@ -1,26 +1,36 @@
 .row {
     max-width : $row-max-width;
-    width : $row-width;
     margin : 0 auto;
 
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
-        @include tablet {
-            margin-right: $gutter-vertical-tablet
+        @include large-desktop {
+            margin-bottom: $gutter-vertical-large-desktop;
         }
+        @include desktop {
+            margin-bottom: $gutter-vertical-desktop;
+        }
+        @include tablet {
+            margin-bottom: $gutter-vertical-tablet;
+        }
+        @include landscape-phone {
+            margin-bottom: $gutter-vertical-landscape-phone;
+        }
+        @include small-phone {
+            margin: $gutter-vertical-small-phone;
+        }
+        
     }
+
     @include clearfix;
 
     
 
     [class^="col-"] {
         float : left;
+        margin-bottom: 1rem;
 
-        @include desktop {
-            margin-bottom: $gutter-vertical-desktop;
-        }
-        @include landscape-phone {
-            width : 100% !important;
+        @include small-phone {
             margin-bottom: $gutter-vertical-landscape-phone;
         }
         &:not(:last-child){
@@ -30,6 +40,41 @@
             }          
         }
     }
+
+
+  //  All columns in 10,9 and 8-column grids take 100% width at screens with width 992px
+   [class$="-of-10"],
+   [class$="-of-9"],
+   [class$="-of-8"] {
+        @include desktop {
+            width : 100% !important;  
+        }
+    }
+
+  // All columns in 7 and 6-column grids take 100% width at screens with width <= 992px
+    [class$="-of-7"],
+    [class$="-of-6"] {
+       @include tablet {
+           width : 100% !important;
+        }
+    }
+
+  // All columns in 5,4 and 3-column grids take 100% width at screens with width <= 576px
+    [class$="-of-5"],
+    [class$="-of-4"],
+    [class$="-of-3"] {
+       @include landscape-phone {
+           width : 100% !important;
+        }
+    }
+
+ // All columns in 2-column grids take 100% width at screens with width <= 480px
+    [class$="-of-2"] {
+        @include small-phone {
+            width : 100% !important;
+        }
+    }
+
 
     .col-1-of-2 {
         width : calc((100% - #{$gutter-horizontal}) / 2);

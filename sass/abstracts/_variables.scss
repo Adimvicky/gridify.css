@@ -8,16 +8,20 @@ $color-black : #000;
 
 $row-max-width : 114rem;
 $row-width : 100%;
-$gutter-vertical : 3rem;
-$gutter-vertical-desktop : 2.5rem;
+
+$gutter-vertical : 2.5rem;
+$gutter-vertical-large-desktop : 3.2rem;
+$gutter-vertical-desktop : 2.2rem;
 $gutter-vertical-tablet : 2rem;
-$gutter-vertical-landscape-phone : .5rem;
+$gutter-vertical-landscape-phone : 1rem;
+$gutter-vertical-small-phone : 1.5rem;
 
 $gutter-horizontal : 3rem;
 $gutter-horizontal-tablet : 2rem;
 
-// SCREEN WIDTHS FOR MEDIA QUERIES
 
+
+// SCREEN WIDTHS FOR MEDIA QUERIES
 
 $small-phone : 480px;
 $landscape-phone : 576px;

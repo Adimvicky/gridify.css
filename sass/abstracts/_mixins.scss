@@ -6,11 +6,18 @@
     } 
 };
 
-@mixin small-phone {
-    @media only screen and (max-width : #{$small-phone}){
+@mixin large-desktop {
+    @media only screen and (max-width : #{$large-desktop}){
         @content
     }
-};
+}
+
+
+@mixin desktop {
+    @media only screen and (max-width : #{$desktop}){
+        @content
+    }
+}
 
 @mixin tablet {
     @media only screen and (max-width : #{$tablet}){
@@ -24,11 +31,19 @@
     }
 };
 
-@mixin desktop {
-    @media only screen and (max-width : #{$desktop}){
+@mixin small-phone {
+    @media only screen and (max-width : #{$small-phone}){
         @content
     }
-}
+};
+
+
+
+
+
+
+
+
 
 
 

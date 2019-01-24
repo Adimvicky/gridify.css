@@ -15,4 +15,7 @@ body {
     @include tablet {
         padding : 1rem;
     }
+    @include small-phone {
+        padding: 0;
+    }
 }
