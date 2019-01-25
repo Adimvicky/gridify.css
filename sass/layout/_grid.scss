@@ -19,7 +19,7 @@
             margin-bottom: $gutter-vertical-landscape-phone;
         }
         @include small-phone {
-            margin: $gutter-vertical-small-phone;
+            margin-bottom: $gutter-vertical-small-phone;
         }
         
     }
