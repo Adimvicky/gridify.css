@@ -1,5 +1,5 @@
 # gridify.css
-A lightweight CSS library for creating  responsive float-based layouts - aimed at bringing all the goodness of flexbox and the likes to older browsers
+A lightweight CSS library for creating  responsive layouts - aimed at bringing all the goodness of flexbox and the likes to older browsers
 
 
 ## Usage 
